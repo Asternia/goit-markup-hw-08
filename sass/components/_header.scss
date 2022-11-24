@@ -1,0 +1,167 @@
+header {
+  position: relative;
+  
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  color: var(--acent-color);
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &__main {
+    color: var(--black);
+  }
+}
+
+.line__mob {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 0;
+}
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: block;
+  }
+
+  &.is-open .icon-close {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  padding-left: 25px;
+
+  background-color: aquamarine;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+
+
+ /* Навігація */
+
+// .site-nav {
+//   display: flex;
+//   margin-left: 93px;
+//   padding-bottom: 32px;
+//   padding-top: 32px;
+
+//   & .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   & .link {
+//     position: relative;
+//     display: block;
+//     color: var(--title-text-color);
+//     text-decoration: none;
+  
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+  
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+//       &:hover,
+//       &:focus {
+//         color: var(--acent-color);
+//       }
+//     }
+
+//   & .current {
+//     color: var(--acent-color);
+//   }
+// }
+
+// .current::after {
+//   content: "";
+
+//   position: absolute;
+//   bottom: -33px;
+
+//   display: block;
+//   height: 4px;
+//   width: 100%;
+//   border-radius: 4px;
+//   background-color: var(--acent-color);
+// }
+
+// /* телефон та имейл */
+
+// .auth-nav {
+//   display: flex;
+//   margin-left: auto;
+
+//   & .item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+
+//   & .link {
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+
+//     color: var(--primary-text-color);
+//     fill: var(--primary-text-color);
+//     text-decoration: none;
+  
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+  
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+//       &:hover,
+//       &:focus {
+//         color: var(--acent-color);
+//         fill: var(--acent-color);
+//       }
+//     }
+// }
+
+// .item .link {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .icon-nav {
+//   margin-right: 10px;
+// }
+
+// .line {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .top-line {
+//   display: flex;
+//   align-items: center;
+// }
+

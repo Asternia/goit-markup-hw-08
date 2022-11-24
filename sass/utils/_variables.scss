@@ -1,0 +1,25 @@
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --acent-color: #2196F3;
+    --main-backgroung-color: #F5F4FA;
+    --secondary-background-color: #2F303A;
+    --white: #FFFFFF;
+    --black: #000000;
+    --background-button-color: #188CE8;
+    --logo-color: #AFB1B8;
+}
+
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white);
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
