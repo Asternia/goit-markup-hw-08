@@ -25,18 +25,14 @@
             <a lang="en" href="./index.html" class="logo"
             >Web<span class="logo__main">Studio</span></a
           >
-          <button type="button" class="menu-button is-open" data-menu-button>
+          <button type="button" class="menu-button">
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-              <use
-                class="icon-close"
-                href="./images/sprite.svg#icon-closemob"
-              ></use>
             </svg>
           </button>
           </div>
 
-          <div class="menu-container" data-menu>
+          <div>
             <ul class="site-nav">
               <li class="item">
                 <a href="./index.html" class="link current">Студія</a>
@@ -44,12 +40,12 @@
               <li class="item">
                 <a href="./portfolio.html" class="link">Портфоліо</a>
               </li>
-              <li class="item"><a href="#" class="link">Контакти</a></li>
+              <li class="item"><a href="./try.html" class="link">Контакти</a></li>
             </ul>
           </div>
         </nav>
 
-        <div class="menu-container" data-menu>
+        <div>
           <ul class="auth-nav">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="link">
@@ -70,6 +66,55 @@
           </ul>
         </div>
       </div>
+
+      <!-- Mobile menu -->
+
+      <div class="mobmenu mobmenu__container">
+        <button type="button" class="menu-button">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-close" href="./images/sprite.svg#icon-closemob"></use>
+        </svg>
+        </button>
+
+        <ul class="mobmenu__site-nav">
+          <li class="item">
+            <a href="./index.html" class="link current">Студія</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфоліо</a>
+          </li>
+          <li class="item"><a href="./try.html" class="link">Контакти</a></li>
+        </ul>
+
+        <ul class="mobmenu__auth-nav">
+          <li class="mobmenu__telli">
+            <a href="tel:+380961111111" class="mobmenu__tel">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobmenu__mailli">
+            <a href="mailto:info@devstudio.com" class="mobmenu__email">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobmenu__linklist">
+          <li class="mobmenu__linkli">
+            <a href="#" class="mobmenu__link">Instagram</a>
+          </li>
+          <li class="mobmenu__linkli">
+            <a href="#" class="mobmenu__link">Twitter</a>
+          </li>
+          <li class="mobmenu__linkli">
+            <a href="#" class="mobmenu__link">Facebook</a>
+          </li>
+          <li class="mobmenu__linkli">
+            <a href="#" class="mobmenu__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+
     </header>
 
     <!--Герой-->

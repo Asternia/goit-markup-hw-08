@@ -1,0 +1,96 @@
+.mobmenu {
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+
+  &__container {
+    padding: 48px 40px;
+  }
+
+  &__site-nav {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/40);
+    letter-spacing: 0.02em;
+  }
+
+  &__site-nav .item:not(:last-child){
+    margin-bottom: 32px;
+  }
+
+  & .link {
+    text-decoration: none;
+  }
+
+  &__tel {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+
+    letter-spacing: 0.02em;
+
+    color: var(--acent-color);
+    text-decoration: none;
+  }
+
+  &__telli {
+    margin-bottom: 32px;
+  }
+
+  &__email {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    text-decoration: none;
+  }
+
+  &__mailli {
+    margin-bottom: 64px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  &__linklist {
+    display: flex;
+  }
+
+  &__linkli:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.menu-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: auto;
+  
+  //   & .icon-close {
+  //     display: none;
+  //   }
+  
+  //   &.is-open .icon-menu {
+  //     display: block;
+  //   }
+  
+  //   &.is-open .icon-close {
+  //     display: none;
+  //   }
+  }

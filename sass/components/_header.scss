@@ -26,46 +26,46 @@ header {
   margin: 10px 0;
 }
 
-.menu-button {
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
+// .menu-container {
+  // display: none;
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // width: 100%;
 
-  & .icon-close {
-    display: none;
-  }
+  // padding-left: 25px;
 
-  &.is-open .icon-menu {
-    display: block;
-  }
+  // background-color: aquamarine;
+  // font-weight: 500;
+  // font-size: 40px;
+  // line-height: 1.17;
+  // letter-spacing: 0.02em;
 
-  &.is-open .icon-close {
-    display: none;
-  }
-}
+  // transform: translateY(-65px);
 
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
+  // &.is-open {
+  //   display: block;
+  // }
+// }
 
-  padding-left: 25px;
+// .secondmenu-container {
+  // position: absolute;
+  // width: 100%;
+  // background-color: crimson;
+// }
 
-  background-color: aquamarine;
-
-  &.is-open {
-    display: block;
-  }
-}
+// .m-container {
+//   min-width: 320px;
+//   max-width: 767px;
+//   padding: 48px 40px;
+// }
 
 
 
  /* Навігація */
 
-// .site-nav {
+.site-nav {
+  display: none;
 //   display: flex;
 //   margin-left: 93px;
 //   padding-bottom: 32px;
@@ -97,7 +97,7 @@ header {
 //   & .current {
 //     color: var(--acent-color);
 //   }
-// }
+}
 
 // .current::after {
 //   content: "";
@@ -114,7 +114,8 @@ header {
 
 // /* телефон та имейл */
 
-// .auth-nav {
+.auth-nav {
+  display: none;
 //   display: flex;
 //   margin-left: auto;
 
@@ -144,7 +145,7 @@ header {
 //         fill: var(--acent-color);
 //       }
 //     }
-// }
+}
 
 // .item .link {
 //   display: flex;
