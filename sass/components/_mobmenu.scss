@@ -1,9 +1,18 @@
 .mobmenu {
+  position: fixed;
   background-color: yellow;
   width: 100vw;
   height: 100vh;
   top: 0;
-  position: fixed;
+  left: 0;
+
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
 
   &__container {
     padding: 48px 40px;
@@ -66,21 +75,45 @@
 
   &__linklist {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__linkli {
+    position: relative;
   }
 
   &__linkli:not(:last-child) {
     margin-right: 20px;
   }
+
+  &__link::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 1px;
+    left: -21px;
+    top: 10px;
+    background-color: black;
+  
+    // border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
 
-.menu-button {
-  display: block;
-  border: none;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-  margin-left: auto;
+.menu-toggle {
+  @media screen and (min-width:320px) and (max-width:767px) {
+    display: block;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1600px) {
+    display: none;
+  }
   
   //   & .icon-close {
   //     display: none;

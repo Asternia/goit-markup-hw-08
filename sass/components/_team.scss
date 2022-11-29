@@ -4,8 +4,8 @@
   padding-bottom: 60px;
 
   &__list {
-//     display: flex;
     margin-top: 30px;
+    gap: 30px;
   }
 
   &__people {
@@ -17,9 +17,11 @@
     border-radius: 0px 0px 4px 4px;
   }
   
-  &__people:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width:320px) and (max-width:767px) {
+  &__people:not(:first-child) {
+    margin-top: 30px;
   }
+}
 
 //   &__container {
 //     margin-bottom: 30px;
@@ -89,4 +91,36 @@
 .icon-team {
     display: block;
 
+}
+
+// tablet
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .team{
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
+
+    &__people {
+      max-width: 354px;
+    }
+  }
+}
+
+// desktop
+
+@media screen and (min-width:1200px) and (max-width:1600px) {
+  .team {
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__people {
+      max-width: 270px;
+    }
+  }
 }
