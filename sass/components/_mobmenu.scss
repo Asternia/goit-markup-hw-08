@@ -13,6 +13,9 @@
     transform: translateX(0);
   }
 
+  &__bottom {
+    margin-top: 32px;
+  }
 
   &__container {
     padding: 0 40px 48px;
@@ -174,6 +177,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  overflow: auto;
 }
 
 .menu-toggle {
