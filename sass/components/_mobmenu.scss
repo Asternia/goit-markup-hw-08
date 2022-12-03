@@ -38,6 +38,10 @@
           color: var(--acent-color);
         }
     }
+
+    & .current {
+      color: var(--acent-color);
+    }
   }
 
   &__site-nav .item:not(:last-child){

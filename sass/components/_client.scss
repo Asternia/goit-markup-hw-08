@@ -19,6 +19,10 @@
   }
 }
 
+.icon-client {
+  display: block;
+}
+
 .main-list-client {
   display: flex;
   justify-content: space-around;
@@ -35,6 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 210px;
 
   // @media screen and (max-width:453px) {
   //   &:not(:last-child) {
@@ -53,23 +58,14 @@
 
 // tablet
 
-@media screen and (min-width:768px) and (max-width:1028px) {
+@media screen and (min-width:768px) and (max-width:1199px) {
   .main-list-client {
     gap: 30px;
   }
 
   .client__link {
     padding: 16px 60px;
-  }
-}
-
-@media screen and (min-width:1029px) and (max-width:1199px) {
-  .main-list-client {
-    gap: 30px;
-  }
-
-  .client__link {
-    padding: 16px 85px;
+    max-width: 226px;
   }
 }
 
@@ -78,5 +74,6 @@
 @media screen and (min-width:1200px) and (max-width:1600px) {
   .client__link {
     padding: 16px 32px;
+    max-width: 170px;
   }
 }
