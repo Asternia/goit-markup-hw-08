@@ -228,7 +228,7 @@ header {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -269,7 +269,7 @@ header {
     background-color: var(--acent-color);
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -319,8 +319,9 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .icon-nav {
     margin-right: 10px;
@@ -518,27 +519,25 @@ header {
   overflow: auto;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .menu-toggle {
-    display: block;
-    border: none;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    margin-left: auto;
-    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .menu-toggle:hover, .menu-toggle:focus {
-    fill: var(--acent-color);
-  }
-  .menu-toggle__close {
-    padding-top: 10px;
-    padding-right: 15px;
-  }
+.menu-toggle {
+  display: block;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-left: auto;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) and (max-width: 1600px) {
+.menu-toggle:hover, .menu-toggle:focus {
+  fill: var(--acent-color);
+}
+.menu-toggle__close {
+  padding-top: 10px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -911,7 +910,7 @@ textarea:hover, textarea:focus {
     max-width: 354px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .benefits__section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1076,7 +1075,7 @@ textarea:hover, textarea:focus {
     max-width: 354px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1148,7 +1147,7 @@ textarea:hover, textarea:focus {
     max-width: 226px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .client__link {
     padding: 16px 32px;
     max-width: 170px;
@@ -1333,7 +1332,7 @@ textarea:hover, textarea:focus {
     width: 450px;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -24,42 +24,6 @@ header {
   margin: 10px 0;
 }
 
-// .menu-container {
-  // display: none;
-  // position: absolute;
-  // top: 100%;
-  // left: 0;
-  // width: 100%;
-
-  // padding-left: 25px;
-
-  // background-color: aquamarine;
-  // font-weight: 500;
-  // font-size: 40px;
-  // line-height: 1.17;
-  // letter-spacing: 0.02em;
-
-  // transform: translateY(-65px);
-
-  // &.is-open {
-  //   display: block;
-  // }
-// }
-
-// .secondmenu-container {
-  // position: absolute;
-  // width: 100%;
-  // background-color: crimson;
-// }
-
-// .m-container {
-//   min-width: 320px;
-//   max-width: 767px;
-//   padding: 48px 40px;
-// }
-
-
-
  /* Навігація */
 
 .site-nav {
@@ -185,7 +149,7 @@ header {
 
 // desktop
 
-@media screen and (min-width:1200px) and (max-width:1600px) {
+@media screen and (min-width:1200px) {
   .site-nav {
     display: flex;
     margin-left: 93px;
@@ -234,7 +198,7 @@ header {
   }
 }
 
-@media screen and (min-width:1200px) and (max-width:1600px) {
+@media screen and (min-width:1200px) {
   .auth-nav {
     display: flex;
     margin-left: auto;
@@ -280,7 +244,7 @@ header {
   .top-line {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   }
 
   .icon-nav {
