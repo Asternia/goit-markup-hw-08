@@ -52,7 +52,6 @@ body {
   color: var(--primary-text-color);
   background-color: var(--white);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -549,6 +548,7 @@ header {
   padding: 118px 0;
   margin: 0 auto;
   height: 400px;
+  max-width: 1600px;
 }
 @media screen and (max-width: 1199px) {
   .hero {
@@ -872,6 +872,12 @@ textarea:hover, textarea:focus {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1199px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .benefits__title {
   margin-top: 30px;
   padding: 0;
@@ -884,6 +890,11 @@ textarea:hover, textarea:focus {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .benefits__title {
     text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .benefits__list:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .benefits__p {
@@ -975,6 +986,12 @@ textarea:hover, textarea:focus {
   background-color: var(--main-backgroung-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1199px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__list {
   margin-top: 30px;
@@ -1091,6 +1108,12 @@ textarea:hover, textarea:focus {
 .client {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1199px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .client__link {
   fill: var(--logo-color);
@@ -1369,6 +1392,11 @@ textarea:hover, textarea:focus {
   }
   .footer__title {
     margin-top: 0;
+  }
+  .footer__list {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .tablet-footer {
     display: -webkit-box;
