@@ -16,42 +16,116 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <header>
-      <!--Навігація-->
 
-      <div class="container top-line">
+          <!--Навігація-->
+
+    <header>
+      <div class="top-line container">
         <nav class="line">
-          <a lang="en" href="./index.html" class="logo"
+          <div class="line__mob">
+            <a lang="en" href="./index.html" class="logo"
             >Web<span class="logo__main">Studio</span></a
           >
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
-            </li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
-          </ul>
+          <button type="button" class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          </div>
+
+          <div>
+            <ul class="site-nav">
+              <li class="item">
+                <a href="./index.html" class="link">Студія</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link current">Портфоліо</a>
+              </li>
+              <li class="item"><a href="./contact.html" class="link">Контакти</a></li>
+            </ul>
+          </div>
         </nav>
 
-        <ul class="auth-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-nav" width="16" height="12">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-nav" width="10" height="16">
-                <use href="./images/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div>
+          <ul class="auth-nav">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="icon-nav" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="icon-nav" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <!-- Mobile menu -->
+
+      <div class="mobmenu menu-container js-menu-container" id="mobile-menu">
+        <div class="menu-toggle__close">
+          <button type="button" class="menu-toggle js-close-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-close" href="./images/sprite.svg#icon-closemob"></use>
+          </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu mobmenu__container">
+          <div>
+            <ul class="mobmenu__site-nav">
+              <li class="item">
+                <a href="./index.html" class="link">Студія</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link current">Портфоліо</a>
+              </li>
+              <li class="item"><a href="./contact.html" class="link">Контакти</a></li>
+            </ul>
+          </div>
+  
+          <div class="mobmenu__bottom">
+            <ul class="mobmenu__auth-nav">
+              <li class="mobmenu__telli">
+                <a href="tel:+380961111111" class="mobmenu__tel">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobmenu__mailli">
+                <a href="mailto:info@devstudio.com" class="mobmenu__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+    
+            <ul class="mobmenu__linklist">
+              <li class="mobmenu__linkli">
+                <a href="#" class="mobmenu__link mobmenu__instagram">Instagram</a>
+              </li>
+              <li class="mobmenu__linkli">
+                <a href="#" class="mobmenu__link mobmenu__twitter">Twitter</a>
+              </li>
+              <li class="mobmenu__linkli">
+                <a href="#" class="mobmenu__link mobmenu__facebook">Facebook</a>
+              </li>
+              <li class="mobmenu__linkli">
+                <a href="#" class="mobmenu__link mobmenu__linkedin">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </header>
 
     <!--Проекти-->
@@ -87,10 +161,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="project-img"
+                  class="project__img"
                   src="./images/texnokryk.jpg"
                   alt="Технокряк"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -109,10 +182,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/basketball.jpg"
                   alt="Design"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -131,10 +203,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/seafood.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -153,10 +224,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/headphones.jpg"
                   alt="Проєкт Prime"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -175,10 +245,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/boxes.jpg"
                   alt="Проєкт Boxes"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -197,10 +266,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/monitor.jpg"
                   alt="Монітор"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -219,10 +287,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/limitededition.jpg"
                   alt="Журнал"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -241,10 +308,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/lab.jpg"
                   alt="Бірка з одягу"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -263,10 +329,9 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
                 <img
-                  class="img"
+                  class="project__img"
                   src="./images/growingbusiness.jpg"
                   alt="Робота на ноутбуці"
-                  width="370"
                 />
               </div>
               <div class="project__border">
@@ -283,76 +348,77 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div>
-          <a lang="en" href="./index.html" class="logo"
-            >Web<span class="footer__logo">Studio</span></a
-          >
-          <address>
-            <ul class="footer__list">
-              <li class="footer__li">
-                <a
-                  href="https://goo.gl/maps/BaobwJiwFPhVXWJy6"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address"
-                >
-                  м.Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="tablet-footer">
+          <div class="footer__mobcontainer">
+            <a lang="en" href="./index.html" class="logo"
+              >Web<span class="footer__logo">Studio</span></a
+            >
+            <address>
+              <ul class="footer__list">
+                <li class="footer__li">
+                  <a
+                    href="https://goo.gl/maps/BaobwJiwFPhVXWJy6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address"
+                    >м.Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__li">
+                  <a href="mailto:info@devstudio.com" class="nav-link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__li">
+                  <a href="tel:+380961111111" class="nav-link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__case">
+            <b class="footer__title">приєднуйся</b>
+            <ul class="footer__main-list">
+              <li class="footer__icon-list">
+                <a href="#" class="footer__link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__li">
-                <a href="mailto:info@devstudio.com" class="nav-link"
-                  >info@devstudio.com</a
-                >
+              <li class="footer__icon-list">
+                <a href="#" class="footer__link">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__li">
-                <a href="tel:+380961111111" class="nav-link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer__icon-list">
+                <a href="#" class="footer__link">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-list">
+                <a href="#" class="footer__link">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__case">
-          <b class="footer__title">приєднуйся</b>
-          <ul class="footer__main-list">
-            <li class="footer__icon-list">
-              <a href="#" class="footer__link">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-list">
-              <a href="#" class="footer__link">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-list">
-              <a href="#" class="footer__link">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-list">
-              <a href="#" class="footer__link">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <b class="footer__title">підпишіться на розсилку</b>
-          <form>
+          <form class="footer__form">
             <input
               type="email"
               name="email"
               placeholder="E-mail"
-              class="footer__form"
+              class="footer__input"
             />
             <button type="submit" class="footer__button">
               <div class="icon-subscribe">
@@ -366,5 +432,12 @@
         </div>
       </div>
     </footer>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
